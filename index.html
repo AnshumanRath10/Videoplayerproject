@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Custom Video Player</title>
+</head>
+<body>
+    <div id="video-container">
+        <video id="custom-video">
+            <source id="video-source" src="1080.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="controls">
+            <button id="play-button"><i class="material-icons">play_arrow</i></button>
+            <button id="seek-backward-btn"><i class="material-icons">fast_rewind</i></button>
+            <button id="seek-forward-btn"><i class="material-icons">fast_forward</i></button>
+            <button id="prev-video-btn"><i class="material-icons">skip_previous</i></button>
+            <button id="next-video-btn"><i class="material-icons">skip_next</i></button>
+            <button id="speed-decrease-btn"><i class="material-icons">remove</i>Speed</button>
+            <button id="speed-increase-btn"><i class="material-icons">add</i>Speed</button>
+            <button id="weather-btn"><i class="material-icons">cloud</i>Weather</button>
+            <button id="volume-up-btn"><i class="material-icons">volume_up</i></button>
+            <button id="volume-down-btn"><i class="material-icons">volume_down</i></button>
+            <select id="quality-select">
+            <option value="360.mp4">360p</option>
+            <option value="540.mp4">480p</option>
+            <option value="1080.mp4">1080p</option>
+            </select>
+        </div>
+        <div id="comment-section">
+            <h3>Comments</h3>
+            <div id="comments">
+                <div class="comment">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Mickey_Mouse_%28poster_version%29.svg" alt="User1">
+                    <p>User1: Great video!</p>
+                </div>
+                <div class="comment">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/1/17/Bugs_Bunny.svg" alt="User2">
+                    <p>User2: Very informative.</p>
+                </div>
+                <div class="comment">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Daffy_Duck.svg" alt="User3">
+                    <p>User3: I love this content.</p>
+                </div>
+            </div>
+            <textarea id="comment-box" placeholder="Add a comment..."></textarea>
+            <button id="add-comment-btn"><i class="fas fa-comment"></i>Add Comment</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

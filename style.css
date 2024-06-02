@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('https://mario.nintendo.com/static/pattern-logos-characters-bd1f26898b2027c98ce8ba17c084f523.png');
+  background-color: rgb(60, 57, 57);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#video-container {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  background: #000;
+}
+
+#custom-video {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background: #181717;
+  color: #4f4949;
+}
+
+#comment-section {
+  display: none;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.hidden {
+  display: none;
+}
+
+#comment-section {
+  background-color: #bdc3c7; /* Light grey background for comment section */
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#comments {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.comment img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.comment p {
+  margin: 0;
+  padding: 10px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+}
+
+#comment-box {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#add-comment-btn {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#add-comment-btn:hover {
+  background-color: #666;
+}
+#comment-section {
+  background-color: #bdc3c7; /* Light grey background for comment section */
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none; /* Hide the comment section by default */
+}
